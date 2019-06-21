@@ -1,0 +1,34 @@
+@mixin text($fs,$fc,$fw) {
+    font-size: $fs;
+    color: $fc;
+    font-weight: $fw;
+}
+
+@mixin button($py,$px,$bgColor,$fontColor,$fontSize,$borderColor,$border-radius){
+    padding: $px $py;
+    background: $bgColor;
+    color: $fontColor;
+    font-size: $fontSize;
+    border-color: $borderColor !important;
+    border-radius: $border-radius;
+}
+
+
+@mixin respond-to($breakpoint) {
+    @if(map-has-key($map: $breakpoints, $key: $breakpoint)){
+        $value : map-get($map: $breakpoints, $key: $breakpoint);
+        @if($value < 576px){
+            @media screen and (min-width:$value){
+                @content;
+            }
+        }
+        @else{
+            @media screen and (max-width:$value){
+                @content;
+            }
+        }
+    }
+    @else{
+        @warn("khong co breakpoint nay!")
+    }
+}

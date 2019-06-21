@@ -1,0 +1,38 @@
+.Skills{
+    @extend .paddingContent;
+    .row{
+        @extend .paddingX;
+    }
+    .bgColor{
+        background: $color-white-cream;
+        height:404px;
+        .content{
+            @extend .paddingX;
+            span:first-child{
+                font-weight: $fw-bold-1;
+            }
+        }
+    }
+
+    .tab-content{
+        .row{
+            padding: 0 !important;
+        }
+        .item{
+            height:290px;
+            // background: $color-white-cream;
+        }
+        .imgItem{
+            height:122px;
+        }
+    }
+}
+
+@for $number from 1 through 4{
+    .img#{$number}{
+        background-image: url("../img/kh#{$number}.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}

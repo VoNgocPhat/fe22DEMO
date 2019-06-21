@@ -1,0 +1,21 @@
+.CarouselBanner{
+    background-image: url("../img/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;
+
+    .content{
+        color:white;
+        width:460px;
+        @extend .paddingX;
+
+        p:first-child{
+            @include text($fs-3 + 15,white,$fw-bold-1)
+        }
+    }
+
+    .Search{
+        @extend .inputSearch_extend;
+    }
+}

@@ -1,0 +1,21 @@
+.Works{
+    @extend .paddingX;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-image:linear-gradient(to right,$color-purple,$color-red-0);
+    color:white;
+    .content{
+        span:first-child{
+            @include text($fs-2,white,$fw-bold-1);
+        }
+    }
+    
+    // *= : ky tu trong 1 chu
+    // ~= : 1 chu trong 1 cau
+    // $= : cuoi chuoi
+    i[class*="fa"]{
+        font-size: 40px;
+        margin-top: 7px;
+        margin-right: 13px;
+    }
+}

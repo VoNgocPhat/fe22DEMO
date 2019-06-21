@@ -1,0 +1,221 @@
+.paddingX, .CarouselBanner .content, .Works, .Skills .row, .Skills .bgColor .content {
+  padding-left: 16px;
+  padding-right: 16px; }
+
+.paddingY {
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
+.paddingContent, .Skills {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.inputSearch_extend .btn--search, .CarouselBanner .Search .btn--search {
+  transition: none; }
+  .inputSearch_extend .btn--search:hover, .CarouselBanner .Search .btn--search:hover {
+    background: #ec5252 !important; }
+  .inputSearch_extend .btn--search:hover i, .CarouselBanner .Search .btn--search:hover i {
+    color: white; }
+.inputSearch_extend .input-group, .CarouselBanner .Search .input-group {
+  height: 44px; }
+.inputSearch_extend .input-group input, .CarouselBanner .Search .input-group input, .inputSearch_extend .btn--search, .CarouselBanner .Search .btn--search {
+  background: #f2f3f5;
+  border: 1px solid #f2f3f5; }
+  .inputSearch_extend .input-group input i, .CarouselBanner .Search .input-group input i, .inputSearch_extend .btn--search i, .CarouselBanner .Search .btn--search i {
+    color: #ec5252; }
+.inputSearch_extend .input-group input, .CarouselBanner .Search .input-group input {
+  height: 100%; }
+  .inputSearch_extend .input-group input:focus, .CarouselBanner .Search .input-group input:focus {
+    background: white;
+    border: 1px solid #cacbcc !important;
+    border-right: none !important; }
+  .inputSearch_extend .input-group input:focus + .input-group-append .btn--search, .CarouselBanner .Search .input-group input:focus + .input-group-append .btn--search {
+    background: white;
+    border: 1px solid #cacbcc; }
+
+.my-container {
+  max-width: 1440px; }
+
+.myNavbar {
+  height: 65px;
+  background: white; }
+  .myNavbar .navbar-brand {
+    flex-grow: 1; }
+    .myNavbar .navbar-brand img {
+      width: 110px; }
+  .myNavbar .Category {
+    flex-grow: 1;
+    font-size: 13px;
+    color: #505763;
+    font-weight: 300; }
+    .myNavbar .Category i {
+      color: #a1a7b3; }
+  .myNavbar .Search {
+    flex-grow: 7; }
+    .myNavbar .Search .btn--search {
+      transition: none; }
+      .myNavbar .Search .btn--search:hover {
+        background: #ec5252 !important; }
+      .myNavbar .Search .btn--search:hover i {
+        color: white; }
+    .myNavbar .Search .input-group {
+      height: 44px; }
+    .myNavbar .Search .input-group input, .myNavbar .Search .btn--search {
+      background: #f2f3f5;
+      border: 1px solid #f2f3f5; }
+      .myNavbar .Search .input-group input i, .myNavbar .Search .btn--search i {
+        color: #ec5252; }
+    .myNavbar .Search .input-group input {
+      height: 100%; }
+      .myNavbar .Search .input-group input:focus {
+        background: white;
+        border: 1px solid #cacbcc !important;
+        border-right: none !important; }
+      .myNavbar .Search .input-group input:focus + .input-group-append .btn--search {
+        background: white;
+        border: 1px solid #cacbcc; }
+  .myNavbar .DropwnIntro {
+    flex-grow: 1; }
+    .myNavbar .DropwnIntro a {
+      padding: 15px 12px;
+      background: white;
+      color: #505763;
+      font-size: 13px;
+      border-color: white !important;
+      border-radius: 2px;
+      border: 1px solid;
+      text-decoration: unset; }
+      .myNavbar .DropwnIntro a:hover {
+        padding: 15px 12px;
+        background: #f2f3f5;
+        color: #505763;
+        font-size: 13px;
+        border-color: #cacbcc !important;
+        border-radius: 2px; }
+  .myNavbar .Cart {
+    flex-grow: 1;
+    cursor: pointer;
+    padding: 10px 13px;
+    border: 1px solid white;
+    border-radius: 50%; }
+    .myNavbar .Cart:hover {
+      border: 1px solid #cacbcc;
+      background: #f2f3f5; }
+  @media screen and (max-width: 1200px) {
+    .myNavbar .DropwnIntro {
+      display: none !important; }
+    .myNavbar .Cart {
+      text-align: center; } }
+
+.CarouselBanner {
+  background-image: url("../img/cover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px; }
+  .CarouselBanner .content {
+    color: white;
+    width: 460px; }
+    .CarouselBanner .content p:first-child {
+      font-size: 39px;
+      color: white;
+      font-weight: 700; }
+
+.Works {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(to right, #6e1a52, #ec5252);
+  color: white; }
+  .Works .content span:first-child {
+    font-size: 20px;
+    color: white;
+    font-weight: 700; }
+  .Works i[class*="fa"] {
+    font-size: 40px;
+    margin-top: 7px;
+    margin-right: 13px; }
+
+.Skills .bgColor {
+  background: #f2f3f5;
+  height: 404px; }
+  .Skills .bgColor .content span:first-child {
+    font-weight: 700; }
+.Skills .tab-content .row {
+  padding: 0 !important; }
+.Skills .tab-content .item {
+  height: 290px; }
+.Skills .tab-content .imgItem {
+  height: 122px; }
+
+.img1 {
+  background-image: url("../img/kh1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.img2 {
+  background-image: url("../img/kh2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.img3 {
+  background-image: url("../img/kh3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.img4 {
+  background-image: url("../img/kh4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+::placeholder {
+  font-size: 13px; }
+
+.btn--login {
+  padding: 12px 11px;
+  background: white;
+  color: #a1a7b3;
+  font-size: 13px;
+  border-color: #a1a7b3 !important;
+  border-radius: 2px; }
+  .btn--login:hover {
+    color: #29303b;
+    border-color: #29303b; }
+
+.btn--signup {
+  padding: 12px 11px;
+  background: #ec5252;
+  color: white;
+  font-size: 13px;
+  border-color: #ec5252 !important;
+  border-radius: 2px; }
+  .btn--signup:hover {
+    background: #521822;
+    border-color: #521822 !important; }
+
+.nav-pills {
+  border-bottom: 1px solid #cacbcc; }
+
+.nav-pills .nav-link {
+  color: black; }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background: white;
+  color: black; }
+
+.nav-item {
+  position: relative; }
+
+.nav-link.active::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: #007791;
+  bottom: 0;
+  left: 0; }
+
+/*# sourceMappingURL=index.css.map */

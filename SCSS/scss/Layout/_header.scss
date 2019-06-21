@@ -1,0 +1,94 @@
+.myNavbar{
+    height: 65px;
+    background:white;
+
+    .navbar-brand {
+        flex-grow: 1;
+        img{
+            width:110px;
+        }
+    }
+
+    .Category{
+        flex-grow: 1;
+        i{
+            color:$color-gray-2;
+        }
+        @include text($fs-1,$color-black-light,300)
+    }
+
+    .Search{
+        flex-grow: 7;
+        .btn--search{
+            transition: none;
+            &:hover{
+                background:$color-red-0 !important;
+            }
+            &:hover i{
+                color:white;
+            }
+        }
+        .input-group{
+            height: 44px;
+        }
+        .input-group input, .btn--search{
+            background: $color-white-cream;
+            border: 1px solid $color-white-cream;
+            i{
+                color: $color-red-0;
+            }
+        }
+      
+        .input-group input{
+            height: 100%;
+            &:focus{
+                background:white;
+                border: 1px solid $color-gray-3 !important;
+                border-right: none !important;
+            }
+            &:focus + .input-group-append .btn--search{
+                background:white;
+                border: 1px solid $color-gray-3;
+
+            }
+            
+        }
+    }
+
+    .DropwnIntro{
+        flex-grow: 1;
+        a{
+            @include button($pd-1 + 2, $pd-1 + 5, white, $color-black-light, $fs-1, white, $border-radius);
+            border: 1px solid;
+            text-decoration: unset;
+            &:hover{
+                @include button($pd-1 + 2, $pd-1 + 5, $color-white-cream, $color-black-light, $fs-1, $color-gray-3, $border-radius);
+            }
+        }
+    }
+
+    .Cart{
+        flex-grow: 1;
+        cursor: pointer;
+        padding: 10px 13px;
+        border: 1px solid white;
+        border-radius: 50%;
+
+        &:hover{
+            border: 1px solid $color-gray-3;
+            background:$color-white-cream;
+        }
+    }
+
+
+    @include respond-to("extra-large"){
+        .DropwnIntro{
+            display: none !important;
+        }
+        .Cart{
+            text-align: center;
+        }
+    }
+
+}
+

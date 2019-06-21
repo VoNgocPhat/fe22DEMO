@@ -1,0 +1,15 @@
+.btn--login{
+    @include button($pd-1 + 1, $pd-1 + 2, white, $color-gray-2, $fs-1, $color-gray-2, $border-radius);
+    &:hover{
+        color:$color-black-0;
+        border-color: $color-black-0;
+    }
+}
+
+.btn--signup{
+    @include button($pd-1 + 1, $pd-1 + 2, $color-red-0, white, $fs-1, $color-red-0, $border-radius);
+    &:hover{
+        background: $color-red-1;
+        border-color: $color-red-1 !important;
+    }
+}

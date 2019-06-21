@@ -1,0 +1,52 @@
+.paddingX{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.paddingY{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.paddingContent{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+
+.inputSearch_extend{
+    .btn--search{
+        transition: none;
+        &:hover{
+            background:$color-red-0 !important;
+        }
+        &:hover i{
+            color:white;
+        }
+    }
+    .input-group{
+        height: 44px;
+    }
+    .input-group input, .btn--search{
+        background: $color-white-cream;
+        border: 1px solid $color-white-cream;
+        i{
+            color: $color-red-0;
+        }
+    }
+  
+    .input-group input{
+        height: 100%;
+        &:focus{
+            background:white;
+            border: 1px solid $color-gray-3 !important;
+            border-right: none !important;
+        }
+        &:focus + .input-group-append .btn--search{
+            background:white;
+            border: 1px solid $color-gray-3;
+
+        }
+        
+    }
+}
